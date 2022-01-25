@@ -1,0 +1,22 @@
+<body>
+    <div class="card" style="position:relative;width: 70%;margin-left: 15%;top: 20%;">
+      <div class="card-body">
+        <form #f="ngForm">
+          <mat-form-field appearance="outline" style="width: 100%;">
+            <mat-label>Your Name</mat-label>
+            <input matInput placeholder="Your Name" required [(ngModel)]="Sakthi.name" name="name">
+            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+          </mat-form-field>
+          <br>
+          <mat-form-field appearance="outline" style="width: 100%;" >
+            <mat-label>Crush Name</mat-label>
+            <input matInput placeholder="Crush Name" required [(ngModel)]="Sakthi.crushname" name="crushname">
+            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+          </mat-form-field>
+          <br>  
+          <button mat-raised-button color="primary" style="width: 80%;left: 10%;" (click)="click(f)">Submit</button> 
+          </form>
+      </div>
+    </div>
+    </body>
+    

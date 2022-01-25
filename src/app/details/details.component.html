@@ -1,0 +1,18 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">CrushName</th>
+        <th>Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let list of list;let i=index">
+        <th >{{i+1}}</th>
+        <td>{{list.name}}</td>
+        <td>{{list.crushname}}</td>
+        <td (click)="delete(list)"><mat-icon>delete</mat-icon></td>
+      </tr>
+    </tbody>
+  </table>
